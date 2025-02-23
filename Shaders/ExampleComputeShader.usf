@@ -1,0 +1,16 @@
+#include "/Engine/Public/Platform.ush"
+
+// 定义常量参数（通过 C++ 或蓝图传递）
+float Scale;
+float Translate;
+
+// 定义输入和输出缓冲区
+RWStructuredBuffer<float> InputBuffer : register(u0);
+RWStructuredBuffer<float> OutputBuffer : register(u1);
+
+[numthreads(128, 1, 1)]
+void FunctionMultiply(uint3 DispatchThreadId : SV_DispatchThreadID)
+{
+    // 示例计算逻辑
+    OutputBuffer[DispatchThreadId.x] = InputBuffer[DispatchThreadId.x] * Scale + Translate;
+}

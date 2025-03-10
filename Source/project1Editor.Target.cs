@@ -10,6 +10,6 @@ public class project1EditorTarget : TargetRules
         Type = TargetType.Editor;
         DefaultBuildSettings = BuildSettingsVersion.V5;
         IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_5;
-        ExtraModuleNames.AddRange(new string[] { "project1", "ExampleComputeShader", "ShaderFunctionLibrary" });
+        ExtraModuleNames.AddRange(new string[] { "project1", "ExampleComputeShader", "ShaderFunctionLibrary" , "ExampleGraphicsShader" });
     }
 }

@@ -9,7 +9,7 @@ public class ShaderFunctionLibrary : ModuleRules
 	
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
 
-        PrivateDependencyModuleNames.AddRange(new string[] { "ExampleComputeShader" });
+        PrivateDependencyModuleNames.AddRange(new string[] { "ExampleComputeShader", "ExampleGraphicsShader" });
         //PrivateDependencyModuleNames.AddRange(new string[] { });
 
         // Uncomment if you are using Slate UI
